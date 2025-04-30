@@ -3,18 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Emojy Catcher Game</title>
+        <title>Emoji Picker Game</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <h1>Emoji Game</h1>
+        <div class="difficulty-buttons">
+        <button onclick="setDifficulty(1000)">Facile</button>
+        <button onclick="setDifficulty(500)">Medio</button>
+        <button onclick="setDifficulty(250)">Difficile</button>
         <div class="scores-container">
             <div class="total-score">
-                <h2>Your Score:</h2>
+                <h2>Il tuo punteggio:</h2>
                 <h2 id="score">0</h2>
             </div>
 
             <div class="time">
-                <h2>Time Left:</h2>
+                <h2>Tempo rimasto:</h2>
                 <h2 id="time-left">60</h2>
             </div>
         </div>
@@ -34,6 +39,6 @@
             </div>
         </div>
 
-        <script src="script.js"></script>
+        <script src="script.js"> </script>
     </body>
 </html>
