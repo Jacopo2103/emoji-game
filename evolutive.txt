@@ -1,0 +1,13 @@
+Evolutive:
+
+1) Livelli di difficoltà:
+    1.1) Facile: 1000ms
+    1.2) Medio: 500ms
+    1.3) Difficile: da 1000ms a scendere di 14ms ogni secondo di timer
+
+2) 2 Tipi di emoticon
+    2.1) una buona, che se premuta da punti
+    2.2) una cattiva, che se premuta toglie punti
+
+
+
