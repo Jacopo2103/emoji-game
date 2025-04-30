@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(10, 10, 10);
+    color: #fff;
+}
+
+.scores-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-score {
+    margin: 24px;
+    padding: 24px;
+    text-align: center;
+    background-color: #ccc;
+    color: #000;
+}
+
+.time {
+    margin: 24px;
+    padding: 24px;
+    text-align: center;
+    background-color: #ccc;
+    color: #000;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+    margin: 24px;
+    padding: 24px;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    margin: 16px;
+    background-color: rgb(60, 60, 60);
+}
+
+.emoji {
+    background-image: url("https://w7.pngwing.com/pngs/407/764/png-transparent-yellow-smiley-emoji-emoji-computer-icons-emoticon-sunglasses-emoji-smiley-sticker-glasses.png");
+    background-position: center;
+    background-size: cover;
+}
