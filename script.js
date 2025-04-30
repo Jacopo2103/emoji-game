@@ -7,6 +7,8 @@ let currentTime = 60;
 let hitPosition;
 let timerId;
 
+// commento da eliminare
+
 function randomSquare() {
     // Puliamo tutti i quadrati
     squares.forEach((square) => {
