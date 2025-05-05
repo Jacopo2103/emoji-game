@@ -24,14 +24,14 @@ function getMouseCoords(e) {
 
 
 var followCursor = (function() {
-  var s = document.createElement('div');
+  var s = document.createElement('img');
+  s.src = 'Images/Martello.png';  // Sostituisci con il percorso del tuo PNG
   s.style.position = 'absolute';
   s.style.margin = '0';
-  s.style.padding = '5px';
-  s.style.border = '1px solid red';
-  s.textContent = "🚀"
-
-  s.style.pointerEvents = 'none';
+  s.style.padding = '0';
+  s.style.width = '32px'; // larghezza immagine
+  s.style.height = '32px'; // altezza immagine
+  s.style.pointerEvents = 'none';  // Non intercetta eventi di clic
 
   return {
     init: function() {
@@ -40,8 +40,8 @@ var followCursor = (function() {
 
     run: function(e) {
       var e = e || window.event;
-      s.style.left = (e.clientX - 5) + 'px';
-      s.style.top = (e.clientY - 5) + 'px';
+      s.style.left = (e.clientX - 16) + 'px';  // Aggiusta per centrare l'immagine
+      s.style.top = (e.clientY - 16) + 'px';   // Aggiusta per centrare l'immagine
       getMouseCoords(e);
     }
   };
@@ -51,6 +51,7 @@ window.onload = function() {
   followCursor.init();
   document.body.onmousemove = followCursor.run;
 }
+
 function randomSquare() {
     // Puliamo tutti i quadrati
     squares.forEach((square) => {
